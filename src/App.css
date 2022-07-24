@@ -2,6 +2,15 @@
   max-width: 90%;
   margin: 0 auto;
 }
+.container h1 {
+  text-align: center;
+}
+ input[type="text"]{
+   padding: 10px;
+   font-size: 20px;
+   width: 30%;
+  
+}
 .card{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -39,14 +48,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 20px;
 }
 
 .App-link {
