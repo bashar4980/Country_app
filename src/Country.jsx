@@ -1,9 +1,12 @@
 import React from 'react'
 import './App.css';
 
-const Country = ({country}) => {
+const Country = ({country, clickedName}) => {
     const {name , capital,population,flags}= country
- 
+  const ClickedHandeler= ()=>{
+    // alert(`This Country name is ${name.common}`)
+    clickedName(name.common)
+  }
     
   return (
    <>
@@ -14,6 +17,7 @@ const Country = ({country}) => {
    <h4>Population: {population}</h4>
     <h4>Capital: {capital}</h4>
     <h4>Area: {country.area}</h4>
+    <button onClick={ClickedHandeler} className="btn">Remove</button>
 
     
    
